@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,734 +11,1016 @@
 
 <body>
 
-    <!-- Navigation -->
-    <header class="header">
-        <div class="container nav-container">
+<header class="header">
+    <div class="container nav-container">
 
-            <a href="#home" class="logo">
-                QAZAQ <span>ENGLISH</span>
+        <a href="#home" class="logo">
+            QAZAQ <span>ENGLISH</span>
+        </a>
+
+        <nav class="navigation">
+            <a href="#home">Home</a>
+            <a href="#culture">Culture</a>
+            <a href="#lessons">Lessons</a>
+            <a href="#methodology">Methodology</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <button class="menu-button" onclick="toggleMenu()">☰</button>
+
+    </div>
+</header>
+
+
+<main>
+
+<!-- HERO -->
+
+<section id="home" class="hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+
+        <p class="hero-subtitle">
+            ENGLISH THROUGH KAZAKH CULTURE
+        </p>
+
+        <h1>
+            Learn English.<br>
+            Discover Culture.
+        </h1>
+
+        <p class="hero-description">
+            Explore the traditions, history and cultural heritage
+            of Kazakhstan while developing your English language skills.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#lessons" class="button primary-button">
+                Start Learning
             </a>
 
-            <nav class="navigation">
-                <a href="#home">Home</a>
-                <a href="#culture">Culture</a>
-                <a href="#lessons">Lessons</a>
-                <a href="#methodology">Methodology</a>
-                <a href="#about">About</a>
-            </nav>
-
-            <button class="menu-button" onclick="toggleMenu()">
-                ☰
-            </button>
+            <a href="#culture" class="button secondary-button">
+                Explore Culture
+            </a>
 
         </div>
-    </header>
 
+    </div>
 
-    <!-- Hero Section -->
-    <main>
+</section>
 
-        <section id="home" class="hero">
 
-            <div class="hero-overlay"></div>
+<!-- INTRO -->
 
-            <div class="container hero-content">
+<section class="introduction">
 
-                <p class="hero-subtitle">
-                    ENGLISH THROUGH KAZAKH CULTURE
-                </p>
+    <div class="container intro-grid">
 
-                <h1>
-                    Learn English.<br>
-                    Discover Culture.
-                </h1>
+        <div>
 
-                <p class="hero-description">
-                    Explore the traditions, history and cultural heritage
-                    of Kazakhstan while developing your English language skills.
-                </p>
+            <p class="section-label">OUR IDEA</p>
 
-                <div class="hero-buttons">
-                    <a href="#lessons" class="button primary-button">
-                        Start Learning
-                    </a>
-
-                    <a href="#culture" class="button secondary-button">
-                        Explore Culture
-                    </a>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- Introduction -->
-        <section class="introduction">
-
-            <div class="container intro-grid">
-
-                <div>
-                    <p class="section-label">OUR IDEA</p>
-
-                    <h2>
-                        Learning English through
-                        familiar cultural contexts
-                    </h2>
-                </div>
-
-                <div>
-                    <p class="intro-text">
-                        Qazaq English is an educational platform that combines
-                        English language learning with Kazakh national culture.
-                        Learners develop their vocabulary, reading, speaking
-                        and communication skills through meaningful cultural topics.
-                    </p>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- Culture -->
-        <section id="culture" class="section culture-section">
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <p class="section-label">EXPLORE</p>
-
-                    <h2>Kazakh Culture</h2>
-
-                    <p>
-                        Discover cultural topics and learn useful English
-                        vocabulary at the same time.
-                    </p>
-
-                </div>
-
-
-                <div class="culture-grid">
-
-                    <article class="culture-card">
-                        <div class="card-icon">🏕️</div>
-
-                        <h3>Traditions</h3>
-
-                        <p>
-                            Learn about traditional ceremonies,
-                            customs and social practices.
-                        </p>
-
-                        <button onclick="showTopic('Traditions')">
-                            Explore →
-                        </button>
-                    </article>
-
-
-                    <article class="culture-card">
-                        <div class="card-icon">🍽️</div>
-
-                        <h3>National Cuisine</h3>
-
-                        <p>
-                            Discover traditional Kazakh dishes
-                            and food-related vocabulary.
-                        </p>
-
-                        <button onclick="showTopic('National Cuisine')">
-                            Explore →
-                        </button>
-                    </article>
-
-
-                    <article class="culture-card">
-                        <div class="card-icon">🎵</div>
-
-                        <h3>Music</h3>
-
-                        <p>
-                            Explore Kazakh music, instruments
-                            and the tradition of kuy.
-                        </p>
-
-                        <button onclick="showTopic('Music')">
-                            Explore →
-                        </button>
-                    </article>
-
-
-                    <article class="culture-card">
-                        <div class="card-icon">👘</div>
-
-                        <h3>Traditional Clothing</h3>
-
-                        <p>
-                            Learn about traditional clothing,
-                            ornaments and their cultural meaning.
-                        </p>
-
-                        <button onclick="showTopic('Traditional Clothing')">
-                            Explore →
-                        </button>
-                    </article>
-
-
-                    <article class="culture-card">
-                        <div class="card-icon">🤝</div>
-
-                        <h3>Hospitality</h3>
-
-                        <p>
-                            Discover the importance of guests,
-                            respect and hospitality.
-                        </p>
-
-                        <button onclick="showTopic('Hospitality')">
-                            Explore →
-                        </button>
-                    </article>
-
-
-                    <article class="culture-card">
-                        <div class="card-icon">🎉</div>
-
-                        <h3>Holidays</h3>
-
-                        <p>
-                            Learn about celebrations and
-                            important cultural events.
-                        </p>
-
-                        <button onclick="showTopic('Holidays')">
-                            Explore →
-                        </button>
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- Lessons -->
-        <section id="lessons" class="section lessons-section">
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <p class="section-label">LEARN ENGLISH</p>
-
-                    <h2>Interactive Lessons</h2>
-
-                    <p>
-                        Improve your English skills through
-                        authentic Kazakh cultural topics.
-                    </p>
-
-                </div>
-
-
-                <div class="lesson-grid">
-
-                    <article class="lesson-card">
-
-                        <span class="lesson-number">01</span>
-
-                        <h3>Vocabulary</h3>
-
-                        <p>
-                            Learn new English words connected
-                            with Kazakh culture.
-                        </p>
-
-                        <a href="#vocabulary">
-                            Practice →
-                        </a>
-
-                    </article>
-
-
-                    <article class="lesson-card">
-
-                        <span class="lesson-number">02</span>
-
-                        <h3>Reading</h3>
-
-                        <p>
-                            Read short texts about Kazakh
-                            traditions and culture.
-                        </p>
-
-                        <a href="#reading">
-                            Practice →
-                        </a>
-
-                    </article>
-
-
-                    <article class="lesson-card">
-
-                        <span class="lesson-number">03</span>
-
-                        <h3>Speaking</h3>
-
-                        <p>
-                            Discuss cultural topics and
-                            develop communication skills.
-                        </p>
-
-                        <a href="#speaking">
-                            Practice →
-                        </a>
-
-                    </article>
-
-
-                    <article class="lesson-card">
-
-                        <span class="lesson-number">04</span>
-
-                        <h3>Quiz</h3>
-
-                        <p>
-                            Test your knowledge of English
-                            and Kazakh culture.
-                        </p>
-
-                        <a href="#quiz">
-                            Take Quiz →
-                        </a>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- Methodology -->
-        <section id="methodology" class="section methodology-section">
-
-            <div class="container methodology-grid">
-
-                <div>
-
-                    <p class="section-label">
-                        OUR METHODOLOGY
-                    </p>
-
-                    <h2>
-                        Culture as a bridge
-                        to English learning
-                    </h2>
-
-                    <p class="methodology-text">
-                        Our methodology uses familiar cultural contexts
-                        to make English learning more meaningful,
-                        engaging and relevant to learners.
-                    </p>
-
-                </div>
-
-
-                <div class="steps">
-
-                    <div class="step">
-
-                        <div class="step-number">
-                            01
-                        </div>
-
-                        <div>
-                            <h3>Discover</h3>
-
-                            <p>
-                                Explore a topic from Kazakh culture.
-                            </p>
-                        </div>
-
-                    </div>
-
-
-                    <div class="step">
-
-                        <div class="step-number">
-                            02
-                        </div>
-
-                        <div>
-                            <h3>Learn</h3>
-
-                            <p>
-                                Learn English vocabulary and expressions.
-                            </p>
-                        </div>
-
-                    </div>
-
-
-                    <div class="step">
-
-                        <div class="step-number">
-                            03
-                        </div>
-
-                        <div>
-                            <h3>Practice</h3>
-
-                            <p>
-                                Use English through reading,
-                                speaking and interactive tasks.
-                            </p>
-                        </div>
-
-                    </div>
-
-
-                    <div class="step">
-
-                        <div class="step-number">
-                            04
-                        </div>
-
-                        <div>
-                            <h3>Reflect</h3>
-
-                            <p>
-                                Connect the English lesson
-                                with cultural knowledge.
-                            </p>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- Vocabulary -->
-        <section id="vocabulary" class="section vocabulary-section">
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <p class="section-label">
-                        SAMPLE LESSON
-                    </p>
-
-                    <h2>Vocabulary: Kazakh Hospitality</h2>
-
-                    <p>
-                        Learn useful English words related
-                        to the tradition of hospitality.
-                    </p>
-
-                </div>
-
-
-                <div class="vocabulary-table">
-
-                    <div class="vocabulary-row vocabulary-header">
-                        <div>English Word</div>
-                        <div>Meaning</div>
-                    </div>
-
-
-                    <div class="vocabulary-row">
-                        <div class="word">Hospitality</div>
-                        <div>
-                            Friendly and generous treatment of guests.
-                        </div>
-                    </div>
-
-
-                    <div class="vocabulary-row">
-                        <div class="word">Guest</div>
-                        <div>
-                            A person who is invited or welcomed.
-                        </div>
-                    </div>
-
-
-                    <div class="vocabulary-row">
-                        <div class="word">Host</div>
-                        <div>
-                            A person who receives and welcomes guests.
-                        </div>
-                    </div>
-
-
-                    <div class="vocabulary-row">
-                        <div class="word">Respect</div>
-                        <div>
-                            A feeling of admiration and consideration.
-                        </div>
-                    </div>
-
-
-                    <div class="vocabulary-row">
-                        <div class="word">Tradition</div>
-                        <div>
-                            A custom passed from generation to generation.
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- Reading -->
-        <section id="reading" class="reading-section">
-
-            <div class="container reading-container">
-
-                <div>
-
-                    <p class="section-label">
-                        READING
-                    </p>
-
-                    <h2>
-                        Kazakh Hospitality
-                    </h2>
-
-                </div>
-
-
-                <div class="reading-text">
-
-                    <p>
-                        Hospitality has always been an important
-                        part of Kazakh culture. Guests are traditionally
-                        welcomed with food, tea and warm conversation.
-                    </p>
-
-                    <p>
-                        In Kazakh culture, welcoming a guest is often
-                        considered a sign of respect and generosity.
-                        Sharing food and conversation helps create
-                        strong relationships between people.
-                    </p>
-
-                    <div class="reading-question">
-
-                        <strong>
-                            Reading question:
-                        </strong>
-
-                        <p>
-                            Why is hospitality important in Kazakh culture?
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- Speaking -->
-        <section id="speaking" class="section speaking-section">
-
-            <div class="container speaking-container">
-
-                <p class="section-label">
-                    SPEAKING PRACTICE
-                </p>
-
-                <h2>
-                    Let's talk about culture
-                </h2>
-
-                <p>
-                    Think about your own experience and answer
-                    the question in English.
-                </p>
-
-                <div class="speaking-question">
-
-                    <span>💬</span>
-
-                    <p>
-                        How are guests welcomed in your family?
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- Quiz -->
-        <section id="quiz" class="section quiz-section">
-
-            <div class="container quiz-container">
-
-                <p class="section-label">
-                    TEST YOUR KNOWLEDGE
-                </p>
-
-                <h2>
-                    Culture & English Quiz
-                </h2>
-
-                <div id="quiz-box">
-
-                    <h3 id="question">
-                        Which traditional Kazakh musical instrument
-                        is widely known around the world?
-                    </h3>
-
-
-                    <div class="quiz-options">
-
-                        <button onclick="checkAnswer(false)">
-                            A. Dombra
-                        </button>
-
-                        <button onclick="checkAnswer(false)">
-                            B. Piano
-                        </button>
-
-                        <button onclick="checkAnswer(false)">
-                            C. Violin
-                        </button>
-
-                        <button onclick="checkAnswer(true)">
-                            D. Drum
-                        </button>
-
-                    </div>
-
-                    <p id="quiz-result"></p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- About -->
-        <section id="about" class="section about-section">
-
-            <div class="container about-container">
-
-                <p class="section-label">
-                    ABOUT THE PROJECT
-                </p>
-
-                <h2>
-                    Developing a new approach
-                    to English language education
-                </h2>
-
-                <p>
-                    This project explores the use of Kazakh national
-                    culture as a meaningful context for teaching English.
-                    The platform combines cultural content with
-                    language-learning activities to support vocabulary,
-                    reading, speaking and intercultural awareness.
-                </p>
-
-                <div class="about-highlight">
-
-                    <div>
-                        <strong>Culture</strong>
-                        <span>+</span>
-                        <strong>English</strong>
-                        <span>=</span>
-                        <strong>Meaningful Learning</strong>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- Footer -->
-    <footer class="footer">
-
-        <div class="container footer-container">
-
-            <div>
-
-                <div class="logo footer-logo">
-                    QAZAQ <span>ENGLISH</span>
-                </div>
-
-                <p>
-                    Learn English. Discover Culture.
-                </p>
-
-            </div>
-
-
-            <div class="footer-links">
-
-                <a href="#home">Home</a>
-                <a href="#culture">Culture</a>
-                <a href="#lessons">Lessons</a>
-                <a href="#methodology">Methodology</a>
-
-            </div>
-
-        </div>
-
-
-        <div class="copyright">
-
-            ©️ 2026 Qazaq English. Educational project.
-
-        </div>
-
-    </footer>
-
-
-    <!-- Topic Modal -->
-    <div id="topic-modal" class="modal">
-
-        <div class="modal-content">
-
-            <button class="close-modal" onclick="closeModal()">
-                ×
-            </button>
-
-            <h2 id="modal-title">
-                Culture
+            <h2>
+                Learning English through
+                familiar cultural contexts
             </h2>
 
-            <p id="modal-text">
-                Cultural information will appear here.
+        </div>
+
+        <div>
+
+            <p class="intro-text">
+                Qazaq English is an educational platform that combines
+                English language learning with Kazakh national culture.
+                Learners develop vocabulary, reading, speaking,
+                grammar and communication skills through meaningful
+                cultural topics.
             </p>
 
         </div>
 
     </div>
 
+</section>
 
-    <script src="script.js"></script>
+
+<!-- CULTURE -->
+
+<section id="culture" class="section culture-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <p class="section-label">EXPLORE</p>
+
+            <h2>Kazakh Culture</h2>
+
+            <p>
+                Discover cultural topics and learn useful English
+                vocabulary at the same time.
+            </p>
+
+        </div>
+
+
+        <div class="culture-grid">
+
+            <article class="culture-card">
+                <div class="card-icon">🏕️</div>
+
+                <h3>Traditions</h3>
+
+                <p>
+                    Learn about traditional ceremonies,
+                    customs and family values.
+                </p>
+
+                <button onclick="showTopic('Traditions')">
+                    Explore →
+                </button>
+            </article>
+
+
+            <article class="culture-card">
+                <div class="card-icon">🍽️</div>
+
+                <h3>National Cuisine</h3>
+
+                <p>
+                    Discover traditional Kazakh dishes
+                    and food-related vocabulary.
+                </p>
+
+                <button onclick="showTopic('National Cuisine')">
+                    Explore →
+                </button>
+            </article>
+
+
+            <article class="culture-card">
+                <div class="card-icon">🎵</div>
+
+                <h3>Music</h3>
+
+                <p>
+                    Explore the dombra, kuy and
+                    Kazakh musical traditions.
+                </p>
+
+                <button onclick="showTopic('Music')">
+                    Explore →
+                </button>
+            </article>
+
+
+            <article class="culture-card">
+                <div class="card-icon">👘</div>
+
+                <h3>Traditional Clothing</h3>
+
+                <p>
+                    Learn about traditional clothing,
+                    ornaments and cultural identity.
+                </p>
+
+                <button onclick="showTopic('Traditional Clothing')">
+                    Explore →
+                </button>
+            </article>
+
+
+            <article class="culture-card">
+                <div class="card-icon">🤝</div>
+
+                <h3>Hospitality</h3>
+
+                <p>
+                    Discover the importance of guests,
+                    respect and generosity.
+                </p>
+
+                <button onclick="showTopic('Hospitality')">
+                    Explore →
+                </button>
+            </article>
+
+
+            <article class="culture-card">
+                <div class="card-icon">🎉</div>
+
+                <h3>Holidays</h3>
+
+                <p>
+                    Learn about Nauryz and other
+                    important celebrations.
+                </p>
+
+                <button onclick="showTopic('Holidays')">
+                    Explore →
+                </button>
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- LESSONS -->
+
+<section id="lessons" class="section lessons-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <p class="section-label">LEARN ENGLISH</p>
+
+            <h2>Interactive Lessons</h2>
+
+            <p>
+                Improve your English through
+                authentic Kazakh cultural topics.
+            </p>
+
+        </div>
+
+
+        <div class="lesson-grid">
+
+            <article class="lesson-card">
+
+                <span class="lesson-number">01</span>
+
+                <h3>Vocabulary</h3>
+
+                <p>
+                    Learn useful English words and
+                    expressions connected with culture.
+                </p>
+
+                <a href="#vocabulary">
+                    Practice →
+                </a>
+
+            </article>
+
+
+            <article class="lesson-card">
+
+                <span class="lesson-number">02</span>
+
+                <h3>Reading</h3>
+
+                <p>
+                    Read longer cultural texts and
+                    test your understanding.
+                </p>
+
+                <a href="#reading">
+                    Practice →
+                </a>
+
+            </article>
+
+
+            <article class="lesson-card">
+
+                <span class="lesson-number">03</span>
+
+                <h3>Speaking</h3>
+
+                <p>
+                    Practice speaking with questions
+                    for different English levels.
+                </p>
+
+                <a href="#speaking">
+                    Practice →
+                </a>
+
+            </article>
+
+
+            <article class="lesson-card">
+
+                <span class="lesson-number">04</span>
+
+                <h3>Quiz</h3>
+
+                <p>
+                    Test your English and Kazakh
+                    culture knowledge with 15 questions.
+                </p>
+
+                <a href="#quiz">
+                    Take Quiz →
+                </a>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- METHODOLOGY -->
+
+<section id="methodology" class="section methodology-section">
+
+    <div class="container methodology-grid">
+
+        <div>
+
+            <p class="section-label">
+                OUR METHODOLOGY
+            </p>
+
+            <h2>
+                Culture as a bridge
+                to English learning
+            </h2>
+
+            <p class="methodology-text">
+                Our methodology uses familiar cultural contexts
+                to make English learning meaningful, engaging
+                and relevant.
+            </p>
+
+        </div>
+
+
+        <div class="steps">
+
+            <div class="step">
+                <div class="step-number">01</div>
+
+                <div>
+                    <h3>Discover</h3>
+
+                    <p>
+                        Explore a topic from Kazakh culture.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="step">
+                <div class="step-number">02</div>
+
+                <div>
+                    <h3>Learn</h3>
+
+                    <p>
+                        Learn English vocabulary and expressions.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="step">
+                <div class="step-number">03</div>
+
+                <div>
+                    <h3>Practice</h3>
+
+                    <p>
+                        Practice reading, speaking and vocabulary.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="step">
+                <div class="step-number">04</div>
+
+                <div>
+                    <h3>Reflect</h3>
+
+                    <p>
+                        Connect English learning with culture.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- VOCABULARY -->
+
+<section id="vocabulary" class="section vocabulary-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <p class="section-label">
+                VOCABULARY
+            </p>
+
+            <h2>Useful English Words</h2>
+
+            <p>
+                Learn vocabulary connected with Kazakh hospitality.
+            </p>
+
+        </div>
+
+
+        <div class="vocabulary-table">
+
+            <div class="vocabulary-row vocabulary-header">
+                <div>English Word</div>
+                <div>Meaning</div>
+            </div>
+
+
+            <div class="vocabulary-row">
+                <div class="word">Hospitality</div>
+                <div>Friendly and generous treatment of guests.</div>
+            </div>
+
+
+            <div class="vocabulary-row">
+                <div class="word">Guest</div>
+                <div>A person who is invited or welcomed.</div>
+            </div>
+
+
+            <div class="vocabulary-row">
+                <div class="word">Host</div>
+                <div>A person who welcomes guests.</div>
+            </div>
+
+
+            <div class="vocabulary-row">
+                <div class="word">Respect</div>
+                <div>A feeling of admiration and consideration.</div>
+            </div>
+
+
+            <div class="vocabulary-row">
+                <div class="word">Tradition</div>
+                <div>A custom passed from generation to generation.</div>
+            </div>
+
+
+            <div class="vocabulary-row">
+                <div class="word">Generosity</div>
+                <div>The quality of being willing to give and share.</div>
+            </div>
+
+
+            <div class="vocabulary-row">
+                <div class="word">Ceremony</div>
+                <div>A formal event connected with a tradition.</div>
+            </div>
+
+
+            <div class="vocabulary-row">
+                <div class="word">Heritage</div>
+                <div>The traditions and culture passed through generations.</div>
+            </div>
+
+        </div>
+
+
+        <div class="vocab-practice">
+
+            <h3>Quick Vocabulary Practice</h3>
+
+            <p>
+                What does "hospitality" mean?
+            </p>
+
+            <button onclick="vocabAnswer(false)">
+                A. A type of food
+            </button>
+
+            <button onclick="vocabAnswer(true)">
+                B. Friendly treatment of guests
+            </button>
+
+            <button onclick="vocabAnswer(false)">
+                C. Traditional clothing
+            </button>
+
+            <p id="vocab-result"></p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- READING -->
+
+<section id="reading" class="reading-section">
+
+    <div class="container">
+
+        <div class="section-heading reading-heading">
+
+            <p class="section-label">
+                READING PRACTICE
+            </p>
+
+            <h2>Reading About Kazakhstan</h2>
+
+            <p>
+                Read the texts carefully and answer the questions.
+            </p>
+
+        </div>
+
+
+        <!-- READING 1 -->
+
+        <article class="reading-card">
+
+            <div class="reading-number">
+                READING 01
+            </div>
+
+            <h3>Kazakh Hospitality</h3>
+
+            <div class="reading-text">
+
+                <p>
+                    Hospitality has always been an important part of
+                    Kazakh culture. For many generations, welcoming
+                    guests has been considered a sign of respect,
+                    kindness and generosity. In traditional Kazakh
+                    society, guests were often offered the best food
+                    available in the home.
+                </p>
+
+                <p>
+                    When visitors arrived, families could prepare tea,
+                    bread, baursak, meat and other traditional foods.
+                    Conversation was also an important part of the visit.
+                    People talked about their families, journeys,
+                    news and everyday life.
+                </p>
+
+                <p>
+                    Hospitality was especially important because people
+                    living on the steppe sometimes travelled long
+                    distances. A traveller could need food, water,
+                    warmth and a place to rest. Helping such a person
+                    was connected with important ideas about humanity
+                    and respect.
+                </p>
+
+            </div>
+
+
+            <div class="reading-questions">
+
+                <h4>Questions</h4>
+
+                <p>
+                    <strong>1.</strong> What does hospitality show?
+                </p>
+
+                <button onclick="readingAnswer(this, true)">
+                    A. Respect and generosity
+                </button>
+
+                <button onclick="readingAnswer(this, false)">
+                    B. Competition
+                </button>
+
+                <button onclick="readingAnswer(this, false)">
+                    C. Wealth
+                </button>
+
+                <p>
+                    <strong>2.</strong> Why could travellers need help?
+                </p>
+
+                <button onclick="readingAnswer(this, false)">
+                    A. They wanted to buy clothes
+                </button>
+
+                <button onclick="readingAnswer(this, true)">
+                    B. They travelled long distances
+                </button>
+
+                <button onclick="readingAnswer(this, false)">
+                    C. They were going to school
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- READING 2 -->
+
+        <article class="reading-card">
+
+            <div class="reading-number">
+                READING 02
+            </div>
+
+            <h3>The Dombra and Kuy</h3>
+
+            <div class="reading-text">
+
+                <p>
+                    The dombra is one of the best-known symbols of
+                    Kazakh musical culture. It is a traditional
+                    two-stringed instrument that has been used for
+                    generations. Its simple shape makes it easy to
+                    recognize, but its musical possibilities are rich.
+                </p>
+
+                <p>
+                    One important musical tradition connected with the
+                    dombra is called kuy. A kuy is an instrumental
+                    musical composition that can tell a story or
+                    express feelings without using words.
+                </p>
+
+                <p>
+                    Skilled musicians can use rhythm, melody and changes
+                    in sound to create different moods. Through music,
+                    listeners can learn about history, nature, people
+                    and important events.
+                </p>
+
+            </div>
+
+
+            <div class="reading-questions">
+
+                <h4>Questions</h4>
+
+                <p>
+                    <strong>1.</strong> How many strings does the dombra traditionally have?
+                </p>
+
+                <button onclick="readingAnswer(this, true)">
+                    A. Two
+                </button>
+
+                <button onclick="readingAnswer(this, false)">
+                    B. Four
+                </button>
+
+                <button onclick="readingAnswer(this, false)">
+                    C. Six
+                </button>
+
+                <p>
+                    <strong>2.</strong> What can a kuy express?
+                </p>
+
+                <button onclick="readingAnswer(this, false)">
+                    A. Only numbers
+                </button>
+
+                <button onclick="readingAnswer(this, true)">
+                    B. Stories and feelings
+                </button>
+
+                <button onclick="readingAnswer(this, false)">
+                    C. Recipes
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- READING 3 -->
+
+        <article class="reading-card">
+
+            <div class="reading-number">
+                READING 03
+            </div>
+
+            <h3>Nauryz</h3>
+
+            <div class="reading-text">
+
+                <p>
+                    Nauryz is an important spring celebration in
+                    Kazakhstan and many other countries of Central Asia.
+                    The holiday is connected with renewal, friendship,
+                    peace and the beginning of a new year according to
+                    the traditional calendar.
+                </p>
+
+                <p>
+                    During Nauryz, families and communities come
+                    together. People visit relatives and friends,
+                    prepare traditional food and take part in public
+                    celebrations. Special dishes and drinks may be
+                    prepared for guests.
+                </p>
+
+                <p>
+                    Nauryz also has a strong connection with nature.
+                    Spring represents new beginnings, and the celebration
+                    encourages people to think positively about the
+                    future.
+                </p>
+
+            </div>
+
+
+            <div class="reading-questions">
+
+                <h4>Questions</h4>
+
+                <p>
+                    <strong>1.</strong> What does Nauryz represent?
+                </p>
+
+                <button onclick="readingAnswer(this, true)">
+                    A. Renewal and new beginnings
+                </button>
+
+                <button onclick="readingAnswer(this, false)">
+                    B. The end of summer
+                </button>
+
+                <button onclick="readingAnswer(this, false)">
+                    C. A sports competition
+                </button>
+
+                <p>
+                    <strong>2.</strong> What do people often do during Nauryz?
+                </p>
+
+                <button onclick="readingAnswer(this, false)">
+                    A. Stay alone
+                </button>
+
+                <button onclick="readingAnswer(this, true)">
+                    B. Visit relatives and friends
+                </button>
+
+                <button onclick="readingAnswer(this, false)">
+                    C. Avoid traditional food
+                </button>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- SPEAKING -->
+
+<section id="speaking" class="section speaking-section">
+
+    <div class="container speaking-container">
+
+        <p class="section-label">
+            SPEAKING PRACTICE
+        </p>
+
+        <h2>
+            Let's Talk About Culture
+        </h2>
+
+        <p>
+            Choose a level and practice answering the question in English.
+        </p>
+
+
+        <div class="speaking-levels">
+
+            <button onclick="showSpeaking('easy')">
+                Beginner
+            </button>
+
+            <button onclick="showSpeaking('medium')">
+                Intermediate
+            </button>
+
+            <button onclick="showSpeaking('hard')">
+                Advanced
+            </button>
+
+        </div>
+
+
+        <div class="speaking-question">
+
+            <span>💬</span>
+
+            <p id="speaking-question">
+                How are guests welcomed in your family?
+            </p>
+
+        </div>
+
+
+        <div class="speaking-help">
+
+            <h3>Useful phrases</h3>
+
+            <p>
+                In my family... / Usually, we... /
+                In my opinion... / One important tradition is...
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- QUIZ -->
+
+<section id="quiz" class="section quiz-section">
+
+    <div class="container quiz-container">
+
+        <p class="section-label">
+            TEST YOUR KNOWLEDGE
+        </p>
+
+        <h2>
+            Culture & English Quiz
+        </h2>
+
+        <p class="quiz-intro">
+            15 questions. Choose the best answer.
+        </p>
+
+
+        <div id="quiz-box">
+
+            <div class="quiz-progress">
+                Question <span id="quiz-number">1</span> / 15
+            </div>
+
+            <h3 id="question"></h3>
+
+            <div class="quiz-options" id="quiz-options"></div>
+
+            <p id="quiz-result"></p>
+
+            <button id="next-question" onclick="nextQuestion()">
+                Next Question →
+            </button>
+
+        </div>
+
+
+        <div id="quiz-final">
+
+            <h3>Quiz Complete!</h3>
+
+            <p>
+                Your score:
+            </p>
+
+            <strong id="final-score">
+                0 / 15
+            </strong>
+
+            <p id="final-message"></p>
+
+            <button onclick="restartQuiz()">
+                Try Again
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about" class="section about-section">
+
+    <div class="container about-container">
+
+        <p class="section-label">
+            ABOUT THE PROJECT
+        </p>
+
+        <h2>
+            Developing a new approach
+            to English language education
+        </h2>
+
+        <p>
+            This project explores the use of Kazakh national culture
+            as a meaningful context for teaching English.
+            The platform combines cultural content with
+            language-learning activities to support vocabulary,
+            reading, speaking and intercultural awareness.
+        </p>
+
+        <div class="about-highlight">
+
+            <div>
+                <strong>Culture</strong>
+                <span>+</span>
+                <strong>English</strong>
+                <span>=</span>
+                <strong>Meaningful Learning</strong>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+    <div class="container footer-container">
+
+        <div>
+
+            <div class="logo footer-logo">
+                QAZAQ <span>ENGLISH</span>
+            </div>
+
+            <p>
+                Learn English. Discover Culture.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="#home">Home</a>
+            <a href="#culture">Culture</a>
+            <a href="#lessons">Lessons</a>
+            <a href="#methodology">Methodology</a>
+            <a href="#reading">Reading</a>
+            <a href="#quiz">Quiz</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+        © 2026 Qazaq English. Educational project.
+    </div>
+
+</footer>
+
+
+<!-- MODAL -->
+
+<div id="topic-modal" class="modal">
+
+    <div class="modal-content">
+
+        <button class="close-modal" onclick="closeModal()">
+            ×
+        </button>
+
+        <h2 id="modal-title">
+            Culture
+        </h2>
+
+        <p id="modal-text">
+            Cultural information will appear here.
+        </p>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
 
 </body>
 </html>

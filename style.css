@@ -1,8 +1,4 @@
-/* ================================
-   GENERAL
-================================ */
-
-* {
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -35,9 +31,7 @@ button {
 }
 
 
-/* ================================
-   HEADER
-================================ */
+/* HEADER */
 
 .header {
     position: fixed;
@@ -73,14 +67,13 @@ button {
 
 .navigation {
     display: flex;
-    gap: 32px;
+    gap: 30px;
 }
 
 .navigation a {
     font-size: 14px;
     font-weight: 600;
     color: #253044;
-
     transition: 0.3s;
 }
 
@@ -90,22 +83,17 @@ button {
 
 .menu-button {
     display: none;
-
     border: none;
     background: transparent;
-
     font-size: 28px;
     cursor: pointer;
 }
 
 
-/* ================================
-   HERO
-================================ */
+/* HERO */
 
 .hero {
     min-height: 100vh;
-
     position: relative;
 
     display: flex;
@@ -140,7 +128,6 @@ button {
 .hero-content {
     position: relative;
     z-index: 2;
-
     max-width: 850px;
 }
 
@@ -157,9 +144,7 @@ button {
 
 .hero h1 {
     font-size: clamp(48px, 8vw, 88px);
-
     line-height: 1.05;
-
     margin-bottom: 30px;
 }
 
@@ -167,7 +152,6 @@ button {
     max-width: 650px;
 
     font-size: 19px;
-
     color: #e8edf3;
 
     margin-bottom: 40px;
@@ -212,22 +196,21 @@ button {
 }
 
 
-/* ================================
-   INTRODUCTION
-================================ */
+/* GENERAL SECTIONS */
+
+.section {
+    padding: 110px 0;
+}
 
 .introduction {
     padding: 110px 0;
-
-    background: #ffffff;
+    background: white;
 }
 
 .intro-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-
     gap: 80px;
-
     align-items: center;
 }
 
@@ -235,7 +218,6 @@ button {
     color: #c28f2c;
 
     font-size: 12px;
-
     font-weight: 800;
 
     letter-spacing: 3px;
@@ -259,39 +241,23 @@ button {
 
 .intro-text {
     font-size: 18px;
-
     color: #5e6570;
-}
-
-
-/* ================================
-   SECTIONS
-================================ */
-
-.section {
-    padding: 110px 0;
 }
 
 .section-heading {
     text-align: center;
-
-    max-width: 700px;
-
+    max-width: 750px;
     margin: 0 auto 60px;
 }
 
 .section-heading > p:last-child {
     color: #6c7280;
-
     margin-top: 20px;
-
     font-size: 17px;
 }
 
 
-/* ================================
-   CULTURE
-================================ */
+/* CULTURE */
 
 .culture-section {
     background: #f8f6f1;
@@ -299,9 +265,7 @@ button {
 
 .culture-grid {
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
     gap: 20px;
 }
 
@@ -323,27 +287,22 @@ button {
 
 .card-icon {
     font-size: 40px;
-
     margin-bottom: 25px;
 }
 
 .culture-card h3 {
     color: #123d69;
-
     font-size: 23px;
-
     margin-bottom: 12px;
 }
 
 .culture-card p {
     color: #69717d;
-
     margin-bottom: 25px;
 }
 
 .culture-card button {
     border: none;
-
     background: none;
 
     color: #b27f21;
@@ -356,13 +315,10 @@ button {
 }
 
 
-/* ================================
-   LESSONS
-================================ */
+/* LESSONS */
 
 .lessons-section {
     background: #123d69;
-
     color: white;
 }
 
@@ -376,9 +332,7 @@ button {
 
 .lesson-grid {
     display: grid;
-
     grid-template-columns: repeat(4, 1fr);
-
     gap: 20px;
 }
 
@@ -387,7 +341,7 @@ button {
 
     padding: 30px;
 
-    min-height: 270px;
+    min-height: 290px;
 
     position: relative;
 
@@ -410,29 +364,24 @@ button {
 
 .lesson-card h3 {
     font-size: 25px;
-
     margin-bottom: 12px;
 }
 
 .lesson-card p {
     color: #d1dae5;
-
     margin-bottom: 25px;
 }
 
 .lesson-card a {
     color: #e0b858;
-
     font-weight: 700;
 }
 
 
-/* ================================
-   METHODOLOGY
-================================ */
+/* METHODOLOGY */
 
 .methodology-section {
-    background: #ffffff;
+    background: white;
 }
 
 .methodology-grid {
@@ -455,15 +404,12 @@ button {
 
 .steps {
     display: flex;
-
     flex-direction: column;
-
     gap: 20px;
 }
 
 .step {
     display: flex;
-
     gap: 25px;
 
     padding: 25px;
@@ -483,7 +429,6 @@ button {
 
 .step h3 {
     color: #123d69;
-
     margin-bottom: 5px;
 }
 
@@ -492,9 +437,7 @@ button {
 }
 
 
-/* ================================
-   VOCABULARY
-================================ */
+/* VOCABULARY */
 
 .vocabulary-section {
     background: #f8f6f1;
@@ -526,22 +469,65 @@ button {
 
 .vocabulary-header {
     background: #123d69;
-
     color: white;
-
     font-weight: 700;
 }
 
 .word {
     color: #123d69;
-
     font-weight: 700;
 }
 
+.vocab-practice {
+    max-width: 700px;
 
-/* ================================
-   READING
-================================ */
+    margin: 50px auto 0;
+
+    padding: 35px;
+
+    background: white;
+
+    border: 1px solid #ddd8cd;
+
+    text-align: center;
+}
+
+.vocab-practice h3 {
+    color: #123d69;
+    margin-bottom: 15px;
+}
+
+.vocab-practice p {
+    margin-bottom: 20px;
+}
+
+.vocab-practice button {
+    padding: 12px 20px;
+
+    margin: 5px;
+
+    border: 1px solid #ddd8cd;
+
+    background: #f5f2eb;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.vocab-practice button:hover {
+    background: #123d69;
+    color: white;
+}
+
+#vocab-result {
+    font-weight: 700;
+    min-height: 25px;
+    margin-top: 15px;
+}
+
+
+/* READING */
 
 .reading-section {
     padding: 110px 0;
@@ -554,17 +540,44 @@ button {
         );
 }
 
-.reading-container {
-    display: grid;
+.reading-heading {
+    margin-bottom: 50px;
+}
 
-    grid-template-columns: 0.8fr 1.2fr;
+.reading-card {
+    max-width: 900px;
 
-    gap: 100px;
+    margin: 0 auto 40px;
+
+    padding: 45px;
+
+    background: white;
+
+    border: 1px solid #ded7c9;
+}
+
+.reading-number {
+    color: #c28f2c;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 10px;
+}
+
+.reading-card h3 {
+    color: #123d69;
+
+    font-size: 32px;
+
+    margin-bottom: 25px;
 }
 
 .reading-text {
-    font-size: 18px;
-
+    font-size: 17px;
     color: #414a56;
 }
 
@@ -572,28 +585,57 @@ button {
     margin-bottom: 20px;
 }
 
-.reading-question {
+.reading-questions {
     margin-top: 35px;
 
-    padding: 25px;
+    padding-top: 30px;
 
-    background: white;
-
-    border-left: 4px solid #c89b3c;
+    border-top: 1px solid #e1ddd5;
 }
 
-.reading-question strong {
+.reading-questions h4 {
     color: #123d69;
+
+    font-size: 21px;
+
+    margin-bottom: 20px;
+}
+
+.reading-questions p {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.reading-questions button {
+    display: block;
+
+    width: 100%;
+
+    text-align: left;
+
+    padding: 13px 16px;
+
+    margin: 8px 0;
+
+    background: #f5f2eb;
+
+    border: 1px solid #ddd8cd;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.reading-questions button:hover {
+    background: #123d69;
+    color: white;
 }
 
 
-/* ================================
-   SPEAKING
-================================ */
+/* SPEAKING */
 
 .speaking-section {
     background: #123d69;
-
     color: white;
 
     text-align: center;
@@ -605,18 +647,41 @@ button {
 
 .speaking-section h2 {
     color: white;
-
     margin-bottom: 20px;
 }
 
 .speaking-section > .container > p:not(.section-label) {
     color: #d2dbe5;
-
     font-size: 18px;
 }
 
+.speaking-levels {
+    margin-top: 35px;
+}
+
+.speaking-levels button {
+    padding: 12px 22px;
+
+    margin: 5px;
+
+    border: 1px solid rgba(255,255,255,0.3);
+
+    background: rgba(255,255,255,0.08);
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.speaking-levels button:hover {
+    background: white;
+    color: #123d69;
+}
+
 .speaking-question {
-    margin: 45px auto 0;
+    margin: 35px auto 0;
 
     padding: 30px;
 
@@ -632,7 +697,7 @@ button {
 
     justify-content: center;
 
-    max-width: 650px;
+    max-width: 700px;
 }
 
 .speaking-question span {
@@ -641,14 +706,30 @@ button {
 
 .speaking-question p {
     font-size: 20px;
-
     font-weight: 600;
 }
 
+.speaking-help {
+    margin: 30px auto 0;
 
-/* ================================
-   QUIZ
-================================ */
+    max-width: 700px;
+
+    padding: 25px;
+
+    background: rgba(255,255,255,0.05);
+}
+
+.speaking-help h3 {
+    color: #e0b858;
+    margin-bottom: 10px;
+}
+
+.speaking-help p {
+    color: #d2dbe5;
+}
+
+
+/* QUIZ */
 
 .quiz-section {
     background: #f8f6f1;
@@ -658,20 +739,29 @@ button {
     text-align: center;
 }
 
-.quiz-box {
-    max-width: 800px;
+.quiz-intro {
+    color: #68707c;
+    margin-top: 15px;
 }
 
 #quiz-box {
     max-width: 800px;
 
-    margin: 50px auto 0;
+    margin: 40px auto 0;
 
     padding: 40px;
 
     background: white;
 
     border: 1px solid #ded9cf;
+}
+
+.quiz-progress {
+    color: #c28f2c;
+
+    font-weight: 800;
+
+    margin-bottom: 20px;
 }
 
 #question {
@@ -691,7 +781,7 @@ button {
 }
 
 .quiz-options button {
-    padding: 15px;
+    padding: 16px;
 
     background: #f5f2eb;
 
@@ -708,7 +798,16 @@ button {
 
 .quiz-options button:hover {
     background: #123d69;
+    color: white;
+}
 
+.quiz-options button.correct {
+    background: #2e8b57;
+    color: white;
+}
+
+.quiz-options button.wrong {
+    background: #c0392b;
     color: white;
 }
 
@@ -720,14 +819,85 @@ button {
     min-height: 25px;
 }
 
+#next-question {
+    display: none;
 
-/* ================================
-   ABOUT
-================================ */
+    margin: 25px auto 0;
+
+    padding: 13px 25px;
+
+    border: none;
+
+    background: #123d69;
+
+    color: white;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+#next-question:hover {
+    background: #0d2d4c;
+}
+
+#quiz-final {
+    display: none;
+
+    max-width: 600px;
+
+    margin: 40px auto 0;
+
+    padding: 45px;
+
+    background: white;
+
+    border: 1px solid #ded9cf;
+}
+
+#quiz-final h3 {
+    color: #123d69;
+
+    font-size: 30px;
+
+    margin-bottom: 15px;
+}
+
+#final-score {
+    display: block;
+
+    color: #c28f2c;
+
+    font-size: 45px;
+
+    margin: 10px 0 20px;
+}
+
+#final-message {
+    color: #68707c;
+
+    margin-bottom: 25px;
+}
+
+#quiz-final button {
+    padding: 13px 25px;
+
+    border: none;
+
+    background: #123d69;
+
+    color: white;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+
+/* ABOUT */
 
 .about-section {
     background: white;
-
     text-align: center;
 }
 
@@ -741,7 +911,6 @@ button {
 
 .about-section > .container > p:not(.section-label) {
     color: #68707c;
-
     font-size: 18px;
 }
 
@@ -778,9 +947,7 @@ button {
 }
 
 
-/* ================================
-   FOOTER
-================================ */
+/* FOOTER */
 
 .footer {
     background: #0d2d4c;
@@ -802,7 +969,6 @@ button {
 
 .footer-logo {
     color: white;
-
     margin-bottom: 10px;
 }
 
@@ -813,7 +979,7 @@ button {
 .footer-links {
     display: flex;
 
-    gap: 25px;
+    gap: 20px;
 
     flex-wrap: wrap;
 
@@ -843,9 +1009,7 @@ button {
 }
 
 
-/* ================================
-   MODAL
-================================ */
+/* MODAL */
 
 .modal {
     position: fixed;
@@ -915,9 +1079,7 @@ button {
 }
 
 
-/* ================================
-   MOBILE
-================================ */
+/* MOBILE */
 
 @media (max-width: 900px) {
 
@@ -932,7 +1094,7 @@ button {
 
         width: 100%;
 
-        background: #ffffff;
+        background: white;
 
         padding: 25px;
 
@@ -952,10 +1114,8 @@ button {
     }
 
     .intro-grid,
-    .methodology-grid,
-    .reading-container {
+    .methodology-grid {
         grid-template-columns: 1fr;
-
         gap: 40px;
     }
 
@@ -998,7 +1158,6 @@ button {
 
     .vocabulary-row {
         grid-template-columns: 1fr;
-
         gap: 5px;
     }
 
@@ -1014,13 +1173,20 @@ button {
         padding: 25px;
     }
 
+    .reading-card {
+        padding: 25px;
+    }
+
+    .reading-card h3 {
+        font-size: 27px;
+    }
+
     .footer-container {
         flex-direction: column;
     }
 
     .footer-links {
         flex-direction: column;
-
         align-items: flex-start;
     }
 
